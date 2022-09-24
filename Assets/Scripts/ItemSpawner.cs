@@ -57,7 +57,7 @@ public class ItemSpawner : MonoBehaviour
             for(int j=0;j<item.count;j++)
             {
                 v = new Vector3(Random.Range(levelBounds.min.x, levelBounds.max.x), Random.Range(levelBounds.min.y, levelBounds.max.y), Random.Range(levelBounds.min.z, levelBounds.max.z));
-                o = Instantiate(item.prefab, v, Quaternion.identity, itemsOrigin) as GameObject;
+                o = Instantiate(item.prefab, v, Quaternion.Euler(RandomEulerRotation()), itemsOrigin) as GameObject;
                 allPrefabs.Add(o);
             }
         }
@@ -115,5 +115,10 @@ public class ItemSpawner : MonoBehaviour
             return;
         }
         SetupLevel(i);
+    }
+
+    private Vector3 RandomEulerRotation()
+    {
+        return new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
     }
 }
