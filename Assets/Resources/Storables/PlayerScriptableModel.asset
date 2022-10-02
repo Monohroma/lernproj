@@ -18,5 +18,5 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     _playerName: Default
-    _score: 0
-    _lvl: 0
+    _score: 10
+    _lvl: 1

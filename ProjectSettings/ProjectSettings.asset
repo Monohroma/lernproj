@@ -155,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.learnproj
+    Android: com.Is.learnproj
     Standalone: com.DefaultCompany.learnproj
   buildNumber:
     Standalone: 0
